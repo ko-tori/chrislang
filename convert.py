@@ -1,3 +1,5 @@
+# converts brainfuck to chrislang
+
 import sys
 r=''
 for i in open(sys.argv[1]).read():
