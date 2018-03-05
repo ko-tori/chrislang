@@ -4,7 +4,7 @@ There is an array.
 You start at a position.
 Each position in the array stores a value, which starts at zero.
 
-Usage:
+Usage (after adding /bin to path):
 
 chris program.chris
 
