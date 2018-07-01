@@ -2,7 +2,7 @@ import sys,re
 from collections import deque
 
 if len(sys.argv)<2:
-    print "Usage: 'chris file'"
+    print("Usage: 'chris file'")
     sys.exit(0)
 prog = open(sys.argv[1]).read()
 arr=deque([0])
@@ -85,7 +85,7 @@ while 1:
         sys.stdout.write(chr(arr[i]))
         sys.stdout.flush()
     elif re.sub('l[ol]+','',c)=='':
-        arr[i]+=(len(c)-1)/2
+        arr[i]+=int((len(c)-1)/2)
     elif re.sub('ri+p','',c)=='':
         arr[i]-=len(c)-2
         if arr[i]<0:
@@ -97,4 +97,4 @@ while 1:
     elif c=='gg':
         break
     j+=1
-print
+print()
